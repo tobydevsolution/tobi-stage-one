@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard tobi</title>
+    <title>tobi-stage-one</title>
     <style>
       body {
         text-align: center;
@@ -19,10 +19,19 @@
       .container {
         /* max-width: 600px; */
         text-align: center;
-        line-height: 2.1;
+        line-height: 1.4;
       }
       h3 {
         font-size: 2rem;
+      }
+      .dayOfTheWeek {
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+      .github-link a {
+        text-decoration: none;
+        color: cornflowerblue;
+        font-weight: bold;
       }
     </style>
   </head>
@@ -30,21 +39,17 @@
     <div class="container">
       <h1 data-testid="slackUserName">tobilobaorek</h1>
 
-      <img data-testid="slackDisplayImage" src="img/tobiloba.jpg" alt="" />
-      <p data-testid="currentDayOfTheWeek"></p>
+      <img data-testid="slackDisplayImage" src="img/tobiloba.jpg" />
+      <p class="dayOfTheWeek" data-testid="currentDayOfTheWeek"></p>
 
-      <strong data-testid="currentUTCTime" id="currentTime"></strong>
+      <strong data-testid="currentUTCTime"></strong>
       <h3 data-testid="myTrack">FrontEnd</h3>
 
-      <a data-testid="githubURL" href="#">Github URL</a>
+      <div class="github-link">
+        <a href="#" data-testid="githubURL" target="_blank">Github URL</a>
+      </div>
     </div>
 
-    <script>
-      let currentTime = date.now();
-      let now = new Date(); // The current time as a Date
-      object;
-      let ms = now.getTime(); // Convert to a millisecond
-      timestamp;
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
